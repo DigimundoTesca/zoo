@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  Animales:
+  <br>
+  <ul>
+    {% for animal in animales %}
+      <li>{{ animal }}
+        <ul>
+          <li><strong>Edad: </strong>{{animal.edad}}</li>
+          <li><strong>Especie: </strong>{{animal.especie}}</li>
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
