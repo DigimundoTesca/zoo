@@ -1,6 +1,8 @@
-.venv
-venv
+.venv/
+venv/
+.env/
+env/
 *.pyc
 *.sqlite3
-animales/migrations/*
+animales/migrations/
 !animales/migrations/__init__.py
